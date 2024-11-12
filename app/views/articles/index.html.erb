@@ -1,0 +1,14 @@
+<h1 class="text-4xl m-3">Wikinonymous</h1>
+
+<div class="join join-vertical w-full m-5 max-w-xl">
+<% @articles.each do |a| %>
+
+  <div class="collapse collapse-arrow join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4"/>
+    <div class="collapse-title text-xl font-medium"><%= a.title %></div>
+    <div class="collapse-content">
+      <p><%= a.content %></p>
+    </div>
+  </div>
+<% end %>
+</div>
